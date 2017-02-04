@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_setting"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.zhuoxin.phone.activity.SettingsActivity">
+
+    <com.zhuoxin.phone.view.ActionBarView
+        android:id="@+id/actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.zhuoxin.phone.view.ActionBarView>
+
+    <RelativeLayout
+        android:id="@+id/rl_start"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height">
+
+        <TextView
+            style="@style/SettingsTextView"
+            android:text="开机自启" />
+
+        <ToggleButton
+            android:id="@+id/tb_start"
+            style="@style/SettingsToggleButton" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_notification"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height">
+
+        <TextView
+            style="@style/SettingsTextView"
+            android:text="通知图标" />
+
+        <ToggleButton
+            android:id="@+id/tb_notification"
+            style="@style/SettingsToggleButton" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_push"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height">
+
+        <TextView
+            style="@style/SettingsTextView"
+            android:text="消息推送" />
+
+        <ToggleButton
+            android:id="@+id/tb_push"
+            style="@style/SettingsToggleButton" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_help"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height">
+
+        <TextView
+            style="@style/SettingsTextView"
+            android:text="帮助说明" />
+
+        <ImageView style="@style/SettingsImageView" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_aboutus"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height">
+
+        <TextView
+            style="@style/SettingsTextView"
+            android:text="关于手机" />
+
+        <ImageView style="@style/SettingsImageView" />
+    </RelativeLayout>
+
+</LinearLayout>
